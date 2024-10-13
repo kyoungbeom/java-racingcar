@@ -25,6 +25,6 @@ public class CarRacingTest {
     public void carRaceStartTest() {
         CarRacing carRacing = new CarRacing(List.of("pobi", "crong", "honux"));
 
-        assertThat(carRacing.carRaceStart(new FixedNumberMaker())).map(Car::getMovingDistance).isEqualTo(List.of(1, 1, 1));
+        assertThat(carRacing.carRaceStart(new FixedNumberMaker(4))).map(Car::getMovingDistance).isEqualTo(List.of(1, 1, 1));
     }
 }
